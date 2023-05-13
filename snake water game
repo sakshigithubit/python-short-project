@@ -1,0 +1,30 @@
+import random
+l = ["snake","water","gun"]
+cp = random.choice(l)
+while (5):
+
+    print("its your turn enter the value")
+    y = input("your choice: ")
+    if y == "snake":
+        print("computer choice: ",cp)
+    elif y == "gun":
+        print("computer choice: ",cp)
+    elif y == "water":
+        print("computer choice: ",cp)
+
+    if y == "snake" and cp=="water":
+        print("result: computer are winner")
+    elif y == "gun" and cp=="water":
+        print("result: computer is winner")
+    elif y == "snake" and cp=="gun":
+        print("result: computer is winner")
+    elif y == "water" and cp=="snake":
+        print("result: you are winner")
+    elif y == "water" and cp=="gun":
+        print("result: you are winner")
+    elif y == "gun" and cp=="snake":
+        print("result: you are winner")
+    elif y == "snake" and cp=="water":
+        print("result: computer is winner")
+    elif y==cp:
+        print("result: tei the match")
